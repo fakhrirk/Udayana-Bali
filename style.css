@@ -1,0 +1,108 @@
+/* jenis font */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zain:wght@200;300;400;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+body {
+  background-color: #ffebda;
+}
+
+header {
+  background-color: #ffebda;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+
+header a {
+  font-size: 20px;
+  color: black;
+}
+
+.nav-logo img {
+  width: 150px;
+}
+
+.nav-item ul {
+  margin-left: 135px;
+}
+
+.navItem {
+  padding: 10px 40px;
+}
+
+.nav-item ul li {
+  display: inline;
+  list-style: none;
+  padding: 7px;
+}
+
+.nav-item ul li a {
+  text-decoration: none;
+}
+
+/* .nav-item ul li a:hover {
+  border-bottom: 2px solid #36ba98;
+} */
+
+.navItem {
+  transition: 1s all;
+}
+
+.navItem:hover {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.active {
+  font-weight: 700;
+  padding: 10px 40px;
+  border: 3px solid #000;
+  border-radius: 50px;
+  background-color: #36ba98;
+}
+
+.nav-kontak a {
+  text-decoration: none;
+}
+
+.nav-kontak img {
+  width: 50px;
+}
+
+.nav-kontak {
+  padding: 10px 40px;
+  border: 3px solid #000;
+  border-radius: 20px;
+  background-color: #36ba98;
+  box-shadow: 10px 10px 0 #000;
+  transition: all 0.8s;
+  background-image: linear-gradient(-60deg, #ffffff00 0%, #ffffff00 40%, #ffffff44 40%, #ffffff44 60%, #ffffff00 60%, #ffffff00 100%);
+  background-size: 200% 100%;
+  background-position-x: 150%;
+}
+
+.nav-kontak:hover {
+  margin-top: 10px;
+  /* margin-right: -10px; */
+  box-shadow: none;
+  animation: shimmer 1s forwards;
+}
+
+/* Keyframes settings */
+
+@keyframes shimmer {
+  0% {
+    background-position-x: 150%;
+  }
+  100% {
+    background-position-x: -50%;
+  }
+}
