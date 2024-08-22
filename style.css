@@ -18,16 +18,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 100px;
+  padding: 10px 90px;
 }
 
 header a {
-  font-size: 20px;
+  font-size: 17px;
   color: black;
 }
 
 .nav-logo img {
-  width: 150px;
+  width: 130px;
 }
 
 .nav-item ul {
@@ -35,38 +35,38 @@ header a {
 }
 
 .navItem {
-  padding: 10px 40px;
+  padding: 10px 30px;
 }
 
 .nav-item ul li {
   display: inline;
   list-style: none;
-  padding: 7px;
+  /* padding: 5px; */
 }
 
 .nav-item ul li a {
   text-decoration: none;
 }
 
-/* .nav-item ul li a:hover {
-  border-bottom: 2px solid #36ba98;
-} */
-
 .navItem {
-  transition: 1s all;
+  transition: 0.5s all;
 }
 
 .navItem:hover {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .active {
-  font-weight: 700;
-  padding: 10px 40px;
+  padding: 10px 30px;
   border: 3px solid #000;
   border-radius: 50px;
+  transition: 0.5s all;
   background-color: #36ba98;
+}
+
+.active:hover {
+  background-color: #e76f51;
 }
 
 .nav-kontak a {
@@ -78,23 +78,97 @@ header a {
 }
 
 .nav-kontak {
-  padding: 10px 40px;
+  padding: 10px 30px;
   border: 3px solid #000;
   border-radius: 20px;
   background-color: #36ba98;
-  box-shadow: 10px 10px 0 #000;
-  transition: all 0.8s;
+  box-shadow: 5px 5px 0 #000;
+  transition: all 0.5s;
   background-image: linear-gradient(-60deg, #ffffff00 0%, #ffffff00 40%, #ffffff44 40%, #ffffff44 60%, #ffffff00 60%, #ffffff00 100%);
   background-size: 200% 100%;
   background-position-x: 150%;
+  cursor: pointer;
 }
 
 .nav-kontak:hover {
   margin-top: 10px;
   /* margin-right: -10px; */
-  box-shadow: none;
+  box-shadow: 0 0 0 #000;
   animation: shimmer 1s forwards;
 }
+
+.home-content {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.text-head-HC {
+  width: 100%;
+}
+
+.text-head-HC h1 {
+  font-size: 67px;
+}
+.text-head-HC p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.btn-produk-HC {
+  margin-top: 30px;
+}
+
+.btn-produk-HC a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  border: 3px solid #000;
+  border-radius: 20px;
+  background-color: #36ba98;
+  transition: all 0.5s;
+}
+
+.btn-produk-HC a:hover {
+  margin-left: 10px;
+  background-color: #f4a261;
+}
+
+.gambar-head-HC {
+  width: 80%;
+  display: flex;
+  justify-content: right;
+}
+.gambar-head-HC img {
+  width: 90%;
+  z-index: -1;
+  /* align-items: center; */
+}
+
+/* .emoji {
+  position: absolute;
+}
+
+.emoji img {
+  width: 110px;
+}
+
+.emoji-3 {
+  margin-right: 110px;
+  margin-bottom: 143px;
+}
+
+.emoji-1 {
+  margin-bottom: 387px;
+  margin-right: 12px;
+}
+
+.emoji-2 {
+  margin-top: 505px;
+} */
 
 /* Keyframes settings */
 
@@ -104,5 +178,14 @@ header a {
   }
   100% {
     background-position-x: -50%;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
   }
 }
