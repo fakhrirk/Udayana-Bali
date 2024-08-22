@@ -14,6 +14,7 @@ body {
 }
 
 header {
+  width: 100vw;
   background-color: #ffebda;
   display: flex;
   justify-content: space-between;
@@ -59,6 +60,7 @@ header a {
 
 .active {
   padding: 10px 30px;
+  font-weight: 700;
   border: 3px solid #000;
   border-radius: 50px;
   transition: 0.5s all;
@@ -71,10 +73,6 @@ header a {
 
 .nav-kontak a {
   text-decoration: none;
-}
-
-.nav-kontak img {
-  width: 50px;
 }
 
 .nav-kontak {
@@ -145,30 +143,25 @@ header a {
 .gambar-head-HC img {
   width: 90%;
   z-index: -1;
-  /* align-items: center; */
 }
 
-/* .emoji {
-  position: absolute;
+/* .text-bahadur {
+  width: 100vw;
+  height: 7vh;
+  border: 2px solid #000;
+  background-color: #36ba98;
 }
 
-.emoji img {
-  width: 110px;
-}
-
-.emoji-3 {
-  margin-right: 110px;
-  margin-bottom: 143px;
-}
-
-.emoji-1 {
-  margin-bottom: 387px;
-  margin-right: 12px;
-}
-
-.emoji-2 {
-  margin-top: 505px;
+.text-bahadur p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 } */
+
+#Home-content {
+  margin-bottom: 3%;
+}
 
 /* Keyframes settings */
 
