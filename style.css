@@ -172,6 +172,9 @@ header a {
 
 .text-bahadur p {
   text-align: center;
+  animation: fadeInLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 }
 
 #Home-content {
