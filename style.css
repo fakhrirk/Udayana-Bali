@@ -94,7 +94,6 @@ header a {
 
 .nav-kontak:hover {
   margin-top: 10px;
-  /* margin-right: -10px; */
   box-shadow: 0 0 0 #000;
   animation: shimmer 1s forwards;
 }
