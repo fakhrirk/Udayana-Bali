@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins";
+  overflow-x: visible;
 }
 
 body {
@@ -20,6 +21,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 90px;
+
   animation: fadeInDown 2s ease-in;
 }
 
@@ -33,11 +35,11 @@ header a {
 }
 
 .nav-item ul {
-  margin-left: 135px;
+  margin-left: 100px;
 }
 
 .navItem {
-  padding: 10px 30px;
+  padding: 10px 20px;
 }
 
 .nav-item ul li {
@@ -96,6 +98,35 @@ header a {
   animation: shimmer 1s forwards;
 }
 
+.BG-HC {
+  animation: muncul 3s ease-in;
+  z-index: -20;
+}
+
+.BG-HC-1 {
+  width: 20%;
+  position: absolute;
+  margin-left: 80%;
+  overflow: hidden;
+  animation: BolakBalik 20s ease-in-out infinite alternate;
+  z-index: -20;
+}
+
+.BG-HC-2 {
+  width: 70%;
+  animation: muncul 3s ease-in;
+  z-index: 10;
+}
+
+.BG-HC-2 {
+  width: 45%;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 17.5%;
+  animation: BolakBalik1 20s ease-in-out infinite alternate;
+  z-index: 10;
+}
+
 .home-content {
   width: 100%;
   height: 80vh;
@@ -104,7 +135,6 @@ header a {
   justify-content: center;
   align-items: center;
   padding: 0 90px;
-  /* animation: muncul 1s ease-in; */
 }
 
 .text-head-HC {
@@ -113,20 +143,30 @@ header a {
 
 .text-head-HC h1 {
   width: 65%;
-  font-size: 67px;
+  font-size: 70px;
   animation: fadeInRight 2s ease-in;
+  word-spacing: 100px;
+  line-height: 85px;
   cursor: pointer;
 }
+
+.indonesia {
+  transition: all 1s;
+}
+
 .text-head-HC p {
   font-size: 20px;
   width: 60%;
   font-weight: 200;
+  margin: 10px 0;
   animation: fadeInRight 1.2s ease-in;
 }
 
-.text-head-HC p:hover {
-  font-weight: 400;
-  cursor: pointer;
+.text-head-HC h1:hover {
+  .indonesia {
+    color: #e76f51;
+    font-size: 75px;
+  }
 }
 
 .btn-produk-HC {
@@ -157,7 +197,7 @@ header a {
 .gambar-head-HC img {
   width: 90%;
   z-index: -1;
-  animation: fadeInLeft 3s ease-in;
+  animation: fadeInLeft 2s ease-in;
 }
 
 .text-bahadur {
@@ -181,14 +221,12 @@ header a {
   margin-bottom: 3%;
 }
 
-
-
 /* VVVV BAGIAN KELEBIHAN VVVV */
 
-.kelebihan-section{
+.kelebihan-section {
   width: 100%;
   height: 110vh;
-  background-color: #FFEBDA;
+  background-color: #ffebda;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,7 +234,7 @@ header a {
   margin-top: 70px;
 }
 /* text2nya */
-.kelebihan-texts{
+.kelebihan-texts {
   width: 100%;
   height: 40%;
   text-align: center;
@@ -205,7 +243,7 @@ header a {
   align-items: center;
   flex-direction: column;
 }
-.kelebihan-title{
+.kelebihan-title {
   width: 60%;
   font-size: 40px;
   margin: 20px;
@@ -213,7 +251,7 @@ header a {
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.kelebihan-desc{
+.kelebihan-desc {
   width: 40%;
   font-size: 20px;
   margin: 10px;
@@ -224,9 +262,8 @@ header a {
 }
 /* text2nya */
 
-
 /* kotak2nya */
-.kelebihan-nya{
+.kelebihan-nya {
   width: 100%;
   height: 60%;
   display: flex;
@@ -238,12 +275,10 @@ header a {
   padding: 0px 100px;
 }
 
-
-
-.pembuatan-btk{
+.pembuatan-btk {
   width: 300px;
   height: 300px;
-  background-color: #36BA98;
+  background-color: #36ba98;
   border: 4px solid black;
   border-radius: 20px;
   box-shadow: 20px 20px 0 #000;
@@ -253,30 +288,29 @@ header a {
   animation-timeline: view();
   animation-range: entry 0% cover 25%;
 }
-.pembuatan-btk:hover{
+.pembuatan-btk:hover {
   margin-top: 10px;
-/* margin-right: -10px; */
-box-shadow: 0 0 0 #000;
+  /* margin-right: -10px; */
+  box-shadow: 0 0 0 #000;
 }
 
-.gambar-pembuatan-btk{
+.gambar-pembuatan-btk {
   width: 300px;
   display: flex;
   flex-direction: column;
 }
-.pembuatan-btk img{
+.pembuatan-btk img {
   width: 70px;
   height: 70px;
   padding-left: 20px;
   padding-top: 20px;
 }
-.pembuatan-btk h1{
+.pembuatan-btk h1 {
   font-size: x-large;
   padding-left: 20px;
   padding-top: 10px;
-
 }
-.pembuatan-btk p{
+.pembuatan-btk p {
   font-size: large;
   padding-left: 20px;
   padding-top: 5px;
@@ -284,14 +318,10 @@ box-shadow: 0 0 0 #000;
   padding-bottom: 20px;
 }
 
-
-
-
-
-.menjual-btk{
+.menjual-btk {
   width: 300px;
   height: 300px;
-  background-color: #E76F51;
+  background-color: #e76f51;
   border: 4px solid black;
   border-radius: 20px;
   box-shadow: 20px 20px 0 #000;
@@ -301,30 +331,29 @@ box-shadow: 0 0 0 #000;
   animation-timeline: view();
   animation-range: entry 0% cover 25%;
 }
-.menjual-btk:hover{
+.menjual-btk:hover {
   margin-top: 10px;
-/* margin-right: -10px; */
-box-shadow: 0 0 0 #000;
-animation: shimmer 1s forwards;
+  /* margin-right: -10px; */
+  box-shadow: 0 0 0 #000;
+  animation: shimmer 1s forwards;
 }
-.gambar-menjual-btk{
+.gambar-menjual-btk {
   width: 300px;
   display: flex;
   flex-direction: column;
 }
-.menjual-btk img{
+.menjual-btk img {
   width: 70px;
   height: 70px;
   padding-left: 20px;
   padding-top: 20px;
 }
-.menjual-btk h1{
+.menjual-btk h1 {
   font-size: x-large;
   padding-left: 20px;
   padding-top: 10px;
-
 }
-.menjual-btk p{
+.menjual-btk p {
   font-size: large;
   padding-left: 20px;
   padding-top: 5px;
@@ -332,14 +361,10 @@ animation: shimmer 1s forwards;
   padding-bottom: 20px;
 }
 
-
-
-
-
-.bahan-berkualitas{
+.bahan-berkualitas {
   width: 300px;
   height: 300px;
-  background-color: #F4A261;
+  background-color: #f4a261;
   border: 4px solid black;
   border-radius: 20px;
   box-shadow: 20px 20px 0 #000;
@@ -349,55 +374,36 @@ animation: shimmer 1s forwards;
   animation-timeline: view();
   animation-range: entry 0% cover 25%;
 }
-.bahan-berkualitas:hover{
+.bahan-berkualitas:hover {
   margin-top: 10px;
-/* margin-right: -10px; */
-box-shadow: 0 0 0 #000;
-animation: shimmer 1s forwards;
+  /* margin-right: -10px; */
+  box-shadow: 0 0 0 #000;
+  animation: shimmer 1s forwards;
 }
 
-.gambar-bahan-berkualitas-btk{
+.gambar-bahan-berkualitas-btk {
   width: 300px;
   display: flex;
   flex-direction: column;
 }
-.bahan-berkualitas img{
+.bahan-berkualitas img {
   width: 70px;
   height: 70px;
   padding-left: 20px;
   padding-top: 20px;
 }
-.bahan-berkualitas h1{
+.bahan-berkualitas h1 {
   font-size: x-large;
   padding-left: 20px;
   padding-top: 10px;
-
 }
-.bahan-berkualitas p{
+.bahan-berkualitas p {
   font-size: large;
   padding-left: 20px;
   padding-top: 5px;
   padding-right: 20px;
   padding-bottom: 20px;
 }
-
-
-/* .kelebihan-nya:nth-last-child(1){
-  animation: fadeInLeft 2s ease-in;
-  animation-timeline: view();
-  animation-range: entry 0% cover 20%;
-}
-.kelebihan-nya:nth-last-child(2){
-  animation: fadeInUp 2s ease-in;
-  animation-timeline: view();
-  animation-range: entry 0% cover 20%;
-}
-.kelebihan-nya:nth-last-child(3){
-  animation: fadeInRight 2s ease-in;
-  animation-timeline: view();
-  animation-range: entry 0% cover 20%;
-} */
-/* kotak2nya */
 
 /* Keyframes settings */
 
@@ -464,10 +470,27 @@ animation: shimmer 1s forwards;
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes BolakBalik {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-350px);
+  }
+}
+@keyframes BolakBalik1 {
+  0% {
+    transform: translateX(-130px);
+  }
+  100% {
+    transform: translateX(50px);
   }
 }
