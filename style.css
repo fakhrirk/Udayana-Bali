@@ -469,6 +469,34 @@ header a {
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
+
+/* VVVVVV awan VVVVVV */
+.BG-HC-3 {
+  animation: muncul 3s ease-in;
+}
+.BG-3 {
+  width: 10%;
+  position: absolute;
+  margin-left: 80%;
+  margin-top: 8%;
+  animation: BolakBalik2 25s ease-in-out infinite alternate;
+  z-index: 0;
+}
+.BG-HC-4 {
+  width: 70%;
+  animation: muncul 3s ease-in;
+  z-index: 10;
+}
+.BG-4 {
+  width: 10%;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 13%;
+  animation: BolakBalik3 25s ease-in-out infinite alternate;
+  z-index: 10;
+}
+/* ^^^^^ awan ^^^^^ */
+
 .desc-tentang-kami {
   width: 450px;
   font-size: 20px;
@@ -968,5 +996,21 @@ header a {
   }
   100% {
     transform: translateX(270px);
+  }
+}
+@keyframes BolakBalik2 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-550px);
+  }
+}
+@keyframes BolakBalik3 {
+  0% {
+    transform: translateX(-130px);
+  }
+  100% {
+    transform: translateX(470px);
   }
 }
