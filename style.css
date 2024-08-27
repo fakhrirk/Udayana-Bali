@@ -403,17 +403,18 @@ header a {
 }
 
 /* tentang-kami-section VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
-.tentang-kami-section{
+.tentang-kami-section {
   width: 100%;
   height: 110vh;
-  background-color: #E9C46A;
+  background-color: #e9c46a;
   border-top: 7px solid black;
   border-bottom: 7px solid black;
   display: flex;
-margin-top: 100px;  align-items: center;
+  margin-top: 100px;
+  align-items: center;
   flex-direction: row;
 }
-.tentang-kami-img-area{
+.tentang-kami-img-area {
   width: 45%;
   height: 100%;
   display: flex;
@@ -421,7 +422,7 @@ margin-top: 100px;  align-items: center;
   align-items: center;
   flex-direction: column;
 }
-.image-tentang-kami img{
+.image-tentang-kami img {
   max-width: 450px;
   /* border-radius: 300px; */
   border: rgba(255, 0, 0, 0) 3px solid;
@@ -430,7 +431,7 @@ margin-top: 100px;  align-items: center;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
-.emoji-tentang-kami-1 img{
+.emoji-tentang-kami-1 img {
   width: 150px;
   position: absolute;
   margin-top: -300px;
@@ -440,7 +441,7 @@ margin-top: 100px;  align-items: center;
   animation-timeline: view();
   animation-range: entry 0% cover 60%;
 }
-.emoji-tentang-kami-2 img{
+.emoji-tentang-kami-2 img {
   width: 150px;
   position: absolute;
   margin-top: 150px;
@@ -450,8 +451,7 @@ margin-top: 100px;  align-items: center;
   animation-range: entry 0% cover 20%;
 }
 
-
-.tentang-kami-texts-area{
+.tentang-kami-texts-area {
   width: 55%;
   height: 100%;
   display: flex;
@@ -459,28 +459,28 @@ margin-top: 100px;  align-items: center;
   align-items: left;
   flex-direction: column;
 }
-.title-tentang-kami{
+.title-tentang-kami {
   width: 750px;
   font-size: 55px;
   text-align: left;
-  margin-top: 70px;
+  margin-top: 110px;
   /* margin-left: 150px; */
   animation: fadeInDown 2s ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.desc-tentang-kami{
+.desc-tentang-kami {
   width: 450px;
   font-size: 20px;
   text-align: left;
   margin-top: 30px;
   /* margin-left: 150px; */
 }
-.desc-tentang-kami span{
+.desc-tentang-kami span {
   font-weight: bold;
 }
 
-.main-desc-pengalaman{
+.main-desc-pengalaman {
   width: 650px;
   font-size: 35px;
   font-weight: 700;
@@ -488,7 +488,7 @@ margin-top: 100px;  align-items: center;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.desc-pengalaman{
+.desc-pengalaman {
   width: 500px;
   font-size: 30px;
   margin-left: 30px;
@@ -497,7 +497,7 @@ margin-top: 100px;  align-items: center;
   animation-range: entry 0% cover 20%;
 }
 
-.main-desc-macam-btk{
+.main-desc-macam-btk {
   width: 750px;
   font-size: 35px;
   font-weight: 700;
@@ -506,7 +506,7 @@ margin-top: 100px;  align-items: center;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.desc-macam-btk{
+.desc-macam-btk {
   width: 550px;
   font-size: 30px;
   margin-left: 30px;
@@ -515,7 +515,7 @@ margin-top: 100px;  align-items: center;
   animation-range: entry 0% cover 20%;
 }
 
-.main-desc-terjual{
+.main-desc-terjual {
   width: 750px;
   font-size: 35px;
   font-weight: 700;
@@ -524,7 +524,7 @@ margin-top: 100px;  align-items: center;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.desc-terjual{
+.desc-terjual {
   width: 600px;
   font-size: 30px;
   margin-left: 30px;
