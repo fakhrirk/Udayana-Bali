@@ -218,7 +218,7 @@ header a {
   margin-bottom: 3%;
 }
 
-/* VVVV BAGIAN KELEBIHAN VVVV */
+/* VVVV BAGIAN KELEBIHAN VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
 
 .kelebihan-section {
   width: 100%;
@@ -402,7 +402,138 @@ header a {
   padding-bottom: 20px;
 }
 
-/* produk-section VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+/* tentang-kami-section VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+.tentang-kami-section{
+  width: 100%;
+  height: 110vh;
+  background-color: #E9C46A;
+  border-top: 7px solid black;
+  border-bottom: 7px solid black;
+  display: flex;
+margin-top: 100px;  align-items: center;
+  flex-direction: row;
+}
+.tentang-kami-img-area{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.image-tentang-kami img{
+  max-width: 450px;
+  /* border-radius: 300px; */
+  border: rgba(255, 0, 0, 0) 3px solid;
+  /* box-shadow: 20px 20px #000; */
+  animation: fadeInRight 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.emoji-tentang-kami-1 img{
+  width: 150px;
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 7%;
+  z-index: 10;
+  animation: fadeInDown 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+.emoji-tentang-kami-2 img{
+  width: 150px;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 30%;
+  animation: fadeInRight 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+
+.tentang-kami-texts-area{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: left;
+  flex-direction: column;
+}
+.title-tentang-kami{
+  width: 750px;
+  font-size: 55px;
+  text-align: left;
+  margin-top: 70px;
+  /* margin-left: 150px; */
+  animation: fadeInDown 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.desc-tentang-kami{
+  width: 450px;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 30px;
+  /* margin-left: 150px; */
+}
+.desc-tentang-kami span{
+  font-weight: bold;
+}
+
+.main-desc-pengalaman{
+  width: 650px;
+  font-size: 35px;
+  font-weight: 700;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.desc-pengalaman{
+  width: 500px;
+  font-size: 30px;
+  margin-left: 30px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.main-desc-macam-btk{
+  width: 750px;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 30px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.desc-macam-btk{
+  width: 550px;
+  font-size: 30px;
+  margin-left: 30px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.main-desc-terjual{
+  width: 750px;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 30px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.desc-terjual{
+  width: 600px;
+  font-size: 30px;
+  margin-left: 30px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+/* produk-section VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
 
 .produk-section {
   width: 100%;
@@ -539,11 +670,11 @@ header a {
 .button-cirebon {
   position: relative;
   width: 150px;
-  font-size: 20px;
+  font-size: 17px;
   background-color: #e76f5100;
   border-radius: 30px;
   border: 3px solid #000;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
   margin-top: 50px;
   margin-left: 180px;
@@ -669,11 +800,11 @@ header a {
 }
 .button-yogya {
   width: 150px;
-  font-size: 20px;
+  font-size: 17px;
   background-color: #36ba9900;
   border-radius: 30px;
   border: 3px solid #000;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
   margin-top: 50px;
   transition: all 0.7s;
@@ -750,7 +881,7 @@ header a {
   box-shadow: 0 0 20px #2612025d;
 }
 
-/* Keyframes settings */
+/* Keyframes settings VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
 
 @keyframes shimmer {
   0% {
