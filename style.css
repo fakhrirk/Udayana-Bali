@@ -100,7 +100,6 @@ header a {
 
 .BG-HC {
   animation: muncul 3s ease-in;
-  z-index: -20;
 }
 
 .BG-HC-1 {
@@ -117,11 +116,11 @@ header a {
   z-index: 10;
 }
 
-.BG-HC-2 {
-  width: 45%;
+.BG-2 {
+  width: 20%;
   position: absolute;
-  margin-left: 50%;
-  margin-top: 17.5%;
+  margin-left: 60%;
+  margin-top: 25%;
   animation: BolakBalik1 20s ease-in-out infinite alternate;
   z-index: 10;
 }
@@ -146,7 +145,6 @@ header a {
   animation: fadeInRight 2s ease-in;
   word-spacing: 100px;
   line-height: 85px;
-  cursor: pointer;
 }
 
 .indonesia {
@@ -169,7 +167,7 @@ header a {
 }
 
 .btn-produk-HC {
-  margin-top: 30px;
+  margin-top: 60px;
   animation: fadeInUp 2s ease-in;
 }
 
@@ -406,27 +404,26 @@ header a {
 
 /* produk-section VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
 
-.produk-section{
+.produk-section {
   width: 100%;
   height: auto;
-  background-color: #FFEBDA;
+  background-color: #ffebda;
   display: flex;
   /* justify-content: center;
   align-items: center; */
   flex-direction: column;
 }
-.produk-section-2{
+.produk-section-2 {
   width: 100%;
   height: auto;
-  background-color: #FFEBDA;
+  background-color: #ffebda;
   display: flex;
   /* justify-content: center;
   align-items: center; */
   flex-direction: column;
 }
 
-
-.main-texts-produk{
+.main-texts-produk {
   width: 100%;
   height: 40%;
   text-align: left;
@@ -436,7 +433,7 @@ header a {
   flex-direction: column;
   margin-top: 160px;
 }
-.title-produk{
+.title-produk {
   width: 50%;
   font-size: 50px;
   margin-left: 100px;
@@ -444,25 +441,25 @@ header a {
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.desc-produk{
+.desc-produk {
   width: 50%;
   font-size: 25px;
   font-weight: 300;
-  word-spacing: -5px;
+  word-spacing: 0px;
   margin-left: 100px;
   margin-top: 30px;
   animation: fadeInRight 2s ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.arrow-produk-1{
+.arrow-produk-1 {
   width: 1px;
   height: 1px;
   animation: muncul 2s ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 70%;
 }
-.arrow-produk-1 img{
+.arrow-produk-1 img {
   max-width: 290px;
   position: absolute;
   margin-left: 880px;
@@ -471,50 +468,48 @@ header a {
   animation: muncul 3s;
 }
 
-
-
-
-.all-model-cirebon{
+.all-model-cirebon {
   display: flex;
   flex-direction: row;
 }
-.model-btk-cirebon-1{
+.model-btk-cirebon-1 {
   width: 100%;
   height: 40%;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   flex-direction: column;
-  /* margin-top: 160px; */
-  /* margin-left: 80px; */
 }
-.model-btk-cirebon-2{
+.model-btk-cirebon-2 {
   width: 100%;
   height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
-  /* margin-left: 80px; */
 }
 
-
-
-.category1{
+.category1 {
   width: 100px;
   font-size: 10px;
-  background-color: #E76F51;
+  background-color: #e76f51;
   border-radius: 30px;
   border: 3px solid #000;
   padding: 3px;
   text-align: center;
   margin-left: 180px;
   margin-top: 160px;
+  transition: all 0.7s;
+  background-image: linear-gradient(-60deg, #ffffff00 0%, #ffffff00 40%, #ffffff44 40%, #ffffff44 60%, #ffffff00 60%, #ffffff00 100%);
+  background-size: 200% 100%;
+  background-position-x: 150%;
   animation: fadeInRight 2s ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.title-cirebon{
+
+.category1:hover {
+  animation: shimmer 1s forwards;
+}
+.title-cirebon {
   width: 600px;
   font-size: 40px;
   text-align: left;
@@ -524,14 +519,14 @@ header a {
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.title-cirebon h1{
+.title-cirebon h1 {
   transition: all 1s;
 }
-.title-cirebon h1:hover{
-  color: #E76F51;
+.title-cirebon h1:hover {
+  color: #e76f51;
   margin-left: 5px;
 }
-.desc-cirebon{
+.desc-cirebon {
   width: 450px;
   font-size: 20px;
   text-align: left;
@@ -541,7 +536,7 @@ header a {
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.button-cirebon{
+.button-cirebon {
   position: relative;
   width: 150px;
   font-size: 20px;
@@ -556,25 +551,23 @@ header a {
   animation: fadeInRight 2s ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
-  
 }
-.button-cirebon:hover{
-  background-color: #F4A261;
-  /* font-size: 61px; */
+.button-cirebon:hover {
+  background-color: #f4a261;
   margin-left: 190px;
 }
-.button-cirebon a{
+.button-cirebon a {
   text-decoration: none;
   font-weight: bold;
   color: #000;
   z-index: 1;
 }
 
-.arrow-produk-2{
+.arrow-produk-2 {
   width: 100px;
   height: 130px;
 }
-.arrow-produk-2 img{
+.arrow-produk-2 img {
   max-width: 315px;
   position: absolute;
   margin-left: 530px;
@@ -583,12 +576,10 @@ header a {
   animation-range: entry 0% cover 70%;
 }
 
-
-.image-cirebon{
+.image-cirebon {
   margin-top: 100px;
-  
 }
-.image-cirebon img{
+.image-cirebon img {
   max-width: 450px;
   border: 3px solid black;
   border-radius: 13px;
@@ -599,34 +590,24 @@ header a {
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.image-cirebon img:hover{
+.image-cirebon img:hover {
   margin-top: 10px;
   box-shadow: 0 0 0 #000;
-  /* animation: shimmer 1s forwards; */
 }
 
-
-
-
-
-
-
-
-.all-model-yogya{
+.all-model-yogya {
   display: flex;
   flex-direction: row;
   margin-top: 100px;
 }
-.model-btk-yogya-1{
+.model-btk-yogya-1 {
   width: 50%;
   height: 40%;
   display: flex;
   justify-content: flex-start;
-  /* align-items: center; */
-  /* flex-direction: column; */
   margin-left: 160px;
 }
-.model-btk-yogya-2{
+.model-btk-yogya-2 {
   width: 50%;
   height: 40%;
   display: flex;
@@ -636,22 +617,29 @@ header a {
   margin-right: 160px;
 }
 
-
-.category2{
+.category2 {
   width: 120px;
   font-size: 10px;
-  background-color: #F4A261;
+  background-color: #f4a261;
   border-radius: 30px;
   border: 3px solid #000;
   padding: 3px;
   text-align: center;
-  /* margin-right: 150px; */
+  transition: all 0.7s;
+  background-image: linear-gradient(60deg, #ffffff00 0%, #ffffff00 40%, #ffffff44 40%, #ffffff44 60%, #ffffff00 60%, #ffffff00 100%);
+  background-size: 200% 100%;
+  background-position-x: 150%;
   margin-top: 80px;
   animation: fadeInLeft 2s ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.title-yogya{
+
+.category2:hover {
+  animation: shimmer 1s forwards;
+}
+
+.title-yogya {
   width: 300px;
   font-size: 40px;
   text-align: right;
@@ -661,15 +649,15 @@ header a {
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.title-yogya h1{
+.title-yogya h1 {
   transition: all 1s;
 }
-.title-yogya h1:hover{
-  color: #F4A261;
+.title-yogya h1:hover {
+  color: #f4a261;
   /* font-size: 61px; */
   margin-right: 5px;
 }
-.desc-yogya{
+.desc-yogya {
   width: 450px;
   font-size: 20px;
   text-align: right;
@@ -679,7 +667,7 @@ header a {
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.button-yogya{
+.button-yogya {
   width: 150px;
   font-size: 20px;
   background-color: #36ba9900;
@@ -694,26 +682,25 @@ header a {
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.button-yogya:hover{
-  background-color: #F4A261;
+.button-yogya:hover {
+  background-color: #f4a261;
   /* font-size: 61px; */
   margin-right: 10px;
 }
-.button-yogya a{
+.button-yogya a {
   text-decoration: none;
   font-weight: bold;
   color: #000;
 }
-.spacer-yogya{
+.spacer-yogya {
   height: 170px;
   width: 100px;
 }
 
-
-.image-yogya{
+.image-yogya {
   margin-top: 1px;
 }
-.image-yogya img{
+.image-yogya img {
   max-width: 450px;
   border: 3px solid black;
   border-radius: 13px;
@@ -723,16 +710,13 @@ header a {
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
-.image-yogya img:hover{
+.image-yogya img:hover {
   margin-top: 10px;
   box-shadow: 0 0 0 #000;
   /* animation: shimmer 1s forwards; */
 }
 
-
-
-
-.button-produk-lainnya-area{
+.button-produk-lainnya-area {
   width: 100%;
   height: 40%;
   text-align: center;
@@ -747,10 +731,10 @@ header a {
   animation-range: entry 0% cover 30%;
 }
 
-.button-produk-lainnya-area a{
+.button-produk-lainnya-area a {
   width: 200px;
   font-size: 20px;
-  background-color: #36BA98;
+  background-color: #36ba98;
   border-radius: 30px;
   border: 3px solid #000;
   padding: 13px;
@@ -761,8 +745,8 @@ header a {
   color: #000;
   transition: all 0.5s;
 }
-.button-produk-lainnya-area a:hover{
-  background-color: #F4A261;
+.button-produk-lainnya-area a:hover {
+  background-color: #f4a261;
   box-shadow: 0 0 20px #2612025d;
 }
 
@@ -852,6 +836,6 @@ header a {
     transform: translateX(-130px);
   }
   100% {
-    transform: translateX(50px);
+    transform: translateX(270px);
   }
 }
