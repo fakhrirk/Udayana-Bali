@@ -463,7 +463,7 @@ header a {
   width: 750px;
   font-size: 55px;
   text-align: left;
-  margin-top: 110px;
+  margin-top: 70px;
   /* margin-left: 150px; */
   animation: fadeInDown 2s ease-in;
   animation-timeline: view();
