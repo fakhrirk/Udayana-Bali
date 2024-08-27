@@ -404,7 +404,7 @@ header a {
 
 /* tentang-kami-section VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
 .tentang-kami-section {
-  width: 100%;
+  width: 100vw;
   height: 110vh;
   background-color: #e9c46a;
   border-top: 7px solid black;
