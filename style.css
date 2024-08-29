@@ -9,6 +9,9 @@
   font-family: "poppins";
   overflow-x: visible;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #ffebda;
@@ -636,7 +639,7 @@ header a {
   width: 10%;
   position: absolute;
   margin-left: 56%;
-  margin-top: 5%;
+  margin-top: 4%;
   animation: jiggle 2.5s ease-in-out infinite alternate;
   z-index: 10;
 }
