@@ -8,8 +8,6 @@
   box-sizing: border-box;
   font-family: "poppins";
   overflow-x: visible;
-}
-html {
   scroll-behavior: smooth;
 }
 
@@ -18,13 +16,12 @@ body {
 }
 
 header {
-  width: 100vw;
+  width: 100%;
   background-color: #ffebda;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 90px;
-
   animation: fadeInDown 2s ease-in;
 }
 
@@ -48,7 +45,6 @@ header a {
 .nav-item ul li {
   display: inline;
   list-style: none;
-  /* padding: 5px; */
 }
 
 .nav-item ul li a {
@@ -99,6 +95,19 @@ header a {
   margin-top: 10px;
   box-shadow: 0 0 0 #000;
   animation: shimmer 1s forwards;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #e76f51;
+  margin: 3px 0;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .BG-HC {
@@ -221,6 +230,38 @@ header a {
   margin-bottom: 3%;
 }
 
+/* Arrow Up */
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 23px;
+  outline: none;
+  border: 3px solid #000;
+  background-color: #36ba98;
+  animation: fadeInUp 0.7s ease-in-out;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.scroll-to-top i {
+  padding: 15px 17px;
+}
+
+.scroll-to-top:hover {
+  background-color: #2b8d74;
+  bottom: 30px;
+  box-shadow: 0 0 20px 3px #7dfadb;
+}
+
+.scroll-to-top a {
+  text-decoration: none;
+  color: #000;
+}
+
 /* VVVV BAGIAN KELEBIHAN VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
 
 .kelebihan-section {
@@ -268,10 +309,8 @@ header a {
   height: 60%;
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
   flex-direction: row;
   margin-top: 85px;
-  /* animation: fadeInUp 2s ease-in; */
   padding: 0px 100px;
 }
 
@@ -290,7 +329,6 @@ header a {
 }
 .pembuatan-btk:hover {
   margin-top: 10px;
-  /* margin-right: -10px; */
   box-shadow: 0 0 0 #000;
 }
 
@@ -333,7 +371,6 @@ header a {
 }
 .menjual-btk:hover {
   margin-top: 10px;
-  /* margin-right: -10px; */
   box-shadow: 0 0 0 #000;
   animation: shimmer 1s forwards;
 }
@@ -376,7 +413,6 @@ header a {
 }
 .bahan-berkualitas:hover {
   margin-top: 10px;
-  /* margin-right: -10px; */
   box-shadow: 0 0 0 #000;
   animation: shimmer 1s forwards;
 }
@@ -399,10 +435,7 @@ header a {
 }
 .bahan-berkualitas p {
   font-size: large;
-  padding-left: 20px;
-  padding-top: 5px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding: 20px 5px 20px 20px;
 }
 
 /* tentang-kami-section VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
@@ -427,9 +460,7 @@ header a {
 }
 .image-tentang-kami img {
   max-width: 450px;
-  /* border-radius: 300px; */
   border: rgba(255, 0, 0, 0) 3px solid;
-  /* box-shadow: 20px 20px #000; */
   animation: fadeInRight 2s ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
@@ -458,7 +489,6 @@ header a {
   width: 55%;
   height: 100%;
   display: flex;
-  /* justify-content: space-around; */
   align-items: left;
   flex-direction: column;
 }
@@ -467,7 +497,6 @@ header a {
   font-size: 55px;
   text-align: left;
   margin-top: 70px;
-  /* margin-left: 150px; */
   animation: fadeInDown 2s ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
@@ -505,7 +534,6 @@ header a {
   font-size: 20px;
   text-align: left;
   margin-top: 30px;
-  /* margin-left: 150px; */
 }
 .desc-tentang-kami span {
   font-weight: bold;
@@ -548,7 +576,7 @@ header a {
 
 .main-desc-terjual {
   width: 750px;
-  font-size: 35px;
+  font-size: 33px;
   font-weight: 700;
   margin-top: 30px;
   animation: fadeInLeft 2s ease-in;
@@ -571,8 +599,6 @@ header a {
   height: auto;
   background-color: #ffebda;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   flex-direction: column;
 }
 .produk-section-2 {
@@ -580,8 +606,6 @@ header a {
   height: auto;
   background-color: #ffebda;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
   flex-direction: column;
 }
 
@@ -787,8 +811,6 @@ header a {
   max-width: 450px;
   border: 3px solid black;
   border-radius: 13px;
-  /* box-shadow: 20px 20px 0 #000; */
-  /* margin-top: -20px; */
   animation: fadeInLeft 2s ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
@@ -884,7 +906,6 @@ header a {
   font-size: 40px;
   text-align: right;
   margin-top: 30px;
-  /* margin-left: 150px; */
   animation: fadeInLeft 2s ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
@@ -894,7 +915,6 @@ header a {
 }
 .title-yogya h1:hover {
   color: #f4a261;
-  /* font-size: 61px; */
   margin-right: 5px;
 }
 .desc-yogya {
@@ -902,7 +922,6 @@ header a {
   font-size: 20px;
   text-align: right;
   margin-top: 30px;
-  /* margin-left: 150px; */
   animation: fadeInLeft 2s ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
@@ -917,14 +936,12 @@ header a {
   text-align: center;
   margin-top: 50px;
   transition: all 0.7s;
-  /* margin-left: 150px; */
   animation: fadeInLeft 2s ease-in;
   animation-timeline: view();
   animation-range: entry 0% cover 20%;
 }
 .button-yogya:hover {
   background-color: #f4a261;
-  /* font-size: 61px; */
   margin-right: 10px;
 }
 .button-yogya a {
@@ -958,7 +975,6 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* margin-top: 150px; */
   margin-bottom: 160px;
   animation: fadeInDown 2s ease-in;
   animation-timeline: view();
@@ -982,6 +998,264 @@ header a {
 .button-produk-lainnya-area a:hover {
   background-color: #f4a261;
   box-shadow: 0 0 20px #2612025d;
+}
+
+/* Testimoni VVVVVVVV */
+#Testimoni {
+  width: 100vw;
+  height: 90vh;
+  margin-bottom: 15%;
+  background-color: #36ba98;
+  border-top: 7px solid black;
+  align-items: center;
+  border-bottom: 7px solid black;
+}
+
+#Testimoni h1 {
+  font-size: 80px;
+  text-align: left;
+  padding: 0 100px;
+  margin-top: 50px;
+  animation: fadeInRight linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.arrow-testimoni img {
+  width: 25%;
+}
+
+.wrapper-testimoni {
+  max-width: 1536px;
+  position: relative;
+  text-align: center;
+  height: 430px;
+  margin-inline: auto;
+  position: relative;
+  margin-top: 3.6rem;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));
+  animation: fadeInLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.Card {
+  margin-top: 55px;
+  border-radius: 6px;
+  position: relative;
+  left: 100%;
+  animation: scrollLeft 50s linear infinite;
+  transition: all 1s;
+}
+
+.ttmn-card {
+  background: #e76f51;
+  padding: 20px;
+  width: 450px;
+  height: 350px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #ffc7995f;
+  position: absolute;
+  transition: all 0.7s;
+  border: #e9c46a 5px solid;
+}
+
+.ttmn-img {
+  width: 120px;
+  height: 120px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto -70px;
+  position: relative;
+  top: -130px;
+  border: #e9c46a 5px solid;
+  overflow: hidden;
+}
+
+.ttmn-img-1,
+.ttmn-img-3 {
+  top: -107px;
+}
+
+.ttmn-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ttmn-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.ttmn-card p {
+  font-size: 14px;
+  margin: 10px 10px;
+}
+.ttmn-card h4 {
+  font-size: 1em;
+  color: #008cba;
+  font-weight: normal;
+}
+
+.card1 {
+  animation-delay: calc(50s / 4 * (4 - 1) * -1);
+}
+.card2 {
+  animation-delay: calc(50s / 4 * (4 - 2) * -1);
+}
+.card3 {
+  animation-delay: calc(50s / 4 * (4 - 3) * -1);
+}
+.card4 {
+  animation-delay: calc(50s / 4 * (4 - 4) * -1);
+}
+
+.wrapper-testimoni:hover {
+  .Card {
+    transition: all 1s;
+    animation-play-state: paused;
+  }
+}
+
+/* Kritik dan Saran vvvvvvvvvvvvvv */
+
+#Kritik-Saran {
+  margin-bottom: 15%;
+}
+
+#Kritik-Saran h1 {
+  text-align: center;
+  font-size: 4rem;
+  animation: fadeInDown 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+#Kritik-Saran p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 7%;
+  animation: fadeInDown 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+.kritik-saran-container {
+  max-width: 50%;
+  margin: 20px auto;
+  padding: 50px 20px;
+  background-color: #36ba98;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  font-family: "poppins";
+  border: 8px solid #ff9800;
+  position: relative;
+  overflow: hidden;
+  animation: cardScroll 2.5s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+.kritik-saran-container::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -70px;
+  width: 200px;
+  height: 200px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 10C30 10 10 30 10 50s20 40 40 40 40-20 40-40S70 10 50 10zm0 70c-16.6 0-30-13.4-30-30s13.4-30 30-30 30 13.4 30 30-13.4 30-30 30z" fill="%23FF9800"/></svg>')
+    no-repeat;
+  opacity: 0.8;
+}
+.kritik-saran-container::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 100px;
+  height: 100px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M90 50c0 22.1-17.9 40-40 40S10 72.1 10 50s17.9-40 40-40 40 17.9 40 40zm-70 0c0 16.6 13.4 30 30 30s30-13.4 30-30-13.4-30-30-30-30 13.4-30 30z" fill="%23FF9800"/></svg>')
+    no-repeat;
+  opacity: 0.8;
+}
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff8e1;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 4px solid #e76f51;
+  border-radius: 15px;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  background-color: #fff8e1;
+  font-family: "Poppins";
+}
+.form-group textarea {
+  resize: vertical;
+}
+.btn-kritik[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins";
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 5px 0 #e64a19;
+}
+.btn-kritik[type="submit"]:hover {
+  background-color: #e64a19;
+  transform: translateY(2px);
+  box-shadow: 0 3px 0 #d84315;
+}
+
+/* AI buttonVVVVVVVVVVVV */
+
+.btn-AI {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99;
+  font-size: 23px;
+  outline: none;
+  background-color: #c35338;
+  padding: 17px 23px;
+  animation: fadeInUp 0.7s ease-in;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.btn-AI:hover {
+  background-color: #2b8d74;
+  bottom: 30px;
+  box-shadow: 0 0 20px 3px #7dfadb;
+}
+
+.btn-AI a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #7dfadb;
 }
 
 /* footerVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
@@ -1009,6 +1283,13 @@ header a {
   min-width: 200px;
   display: flex;
   flex-direction: column;
+}
+
+.footer-section iframe {
+  width: 70;
+  height: 100;
+  display: flex;
+  margin-bottom: 70px;
 }
 
 .footer-section h3 {
@@ -1040,7 +1321,7 @@ header a {
   border-radius: 4px;
 }
 
-.signup-form button {
+.signup-form .btn-daftar {
   background-color: #e76f51;
   color: white;
   padding: 10px;
@@ -1050,7 +1331,7 @@ header a {
   transition: background-color 0.3s;
 }
 
-.signup-form button:hover {
+.signup-form .btn-daftar:hover {
   background-color: #c35338;
 }
 
@@ -1189,14 +1470,54 @@ header a {
   }
 }
 
+@keyframes scrollLeft {
+  to {
+    left: -450px;
+  }
+}
+
+@keyframes cardScroll {
+  from {
+    opacity: 0;
+    transform: perspective(2500px) rotateY(-100deg);
+  }
+  to {
+    transform: perspective(2500px) rotateY(0);
+  }
+}
+
 /* Responsive settings */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  .nav-item {
+    display: none;
+  }
+
+  .nav-kontak {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  /* footer */
   .footer-content {
     flex-direction: column;
   }
 
   .footer-section {
-    margin-bottom: 20px;
+    margin: 20px 20px;
   }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::selection {
+  color: #c35338;
+  background: #36ba998f;
 }

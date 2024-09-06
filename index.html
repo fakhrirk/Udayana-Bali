@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="website icon" href="assets/logo head 1 1 1.png" type="png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="JS/main.js"></script>
     <title>Batiku.</title>
   </head>
   <body>
     <!-- navbar VVV -->
-    <header class="navbar">
+    <header id="navbar" class="navbar">
       <div class="nav-logo">
         <img src="assets/SVG/logo 1.svg" alt="logo home" />
       </div>
@@ -17,13 +19,18 @@
         <ul>
           <li><a href="#" class="active">Home</a></li>
           <li><a class="navItem" href="#Tentang">Tentang</a></li>
-          <li><a class="navItem" href="#Produk">Produk</a></li>
-          <li><a class="navItem" href="#">Testimoni</a></li>
+          <li><a class="navItem" href="html/produkk.html">Produk</a></li>
+          <li><a class="navItem" href="#Testimoni">Testimoni</a></li>
         </ul>
       </div>
       <div class="nav-kontak">
         <a target="_blank" href="https://api.whatsapp.com/send?phone=6285656563250">Kontak Kami <span style="font-weight: 700">--></span> </a>
       </div>
+      <div class="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
     </header>
     <div class="BG-HC">
       <img class="BG-HC-1" src="assets/awan primary.png" />
@@ -38,7 +45,7 @@
           <h1>Asli <br /><span class="indonesia">Indonesia</span> <br />Berkualitas!</h1>
           <p>Tradisional, Modern, Eksklusif!</p>
           <div class="btn-produk-HC">
-            <a href="#">Produk <span style="font-weight: 700">--></span> </a>
+            <a href="#Produk">Produk <span style="font-weight: 700">--></span> </a>
           </div>
         </div>
         <div class="gambar-head-HC">
@@ -105,6 +112,11 @@
       <img class="BG-4" src="assets/awan primary 2.png" />
     </div>
     <!-- awan tentang batiku -->
+
+    <!-- Arrow Up -->
+    <div id="scrollToTop" class="scroll-to-top">
+      <a href="#navbar"><i class="fas fa-arrow-up"></i></a>
+  </div>
 
     <!-- Tentang Kami vvvv -->
     <section id="Tentang" class="tentang-kami-section">
@@ -181,7 +193,7 @@
             <p>Blus merah elegan, motif mega mendung klasik, gaya modern.</p>
           </div>
           <div class="button-cirebon">
-            <a href="#">Lebih Lanjut</a>
+            <a href="produkk.html">Lebih Lanjut</a>
           </div>
           <div class="arrow-produk-2">
             <img src="assets/asset-produk/arrow-produk-2.png" alt="gambar arrow" />
@@ -223,7 +235,7 @@
             <p>Tampil modern dengan sentuhan klasik, batik kawung pilihannya.</p>
           </div>
           <div class="button-yogya">
-            <a href="#">Lebih Lanjut</a>
+            <a href="produkk.html">Lebih Lanjut</a>
           </div>
           <div class="spacer-yogya">
             <!-- just a spacer -->
@@ -236,8 +248,89 @@
     </section>
 
     <section id="Testimoni">
-      <!-- Testimoni -->
+      <h1>Testimoni Klien Kami <span class="arrow-testimoni"><img src="assets/Line.png"></span></h1>
+      <div class="wrapper-testimoni">
+        <div class="card-container">
+          <div class="Card card1">
+            <div class="ttmn-card">
+              <div class="ttmn-img ttmn-img-1">
+                <img src="assets/img-pp-ttmn (1).png" />
+              </div>
+              <h3>Hendra Naufal</h3>
+              <p>" Saya memakai batik ini untuk menghadiri acara pernikahan teman. Semua orang memuji penampilan saya. Batik ini membuat saya merasa anggun dan elegan. Potongannya pas di badan, tidak terlalu..</p>
+              <p class="bintang"></p>⭐⭐⭐⭐⭐<br>5-5</p>
+            </div>
+          </div>
+          <div class="Card card2">
+            <div class="ttmn-card">
+              <div class="ttmn-img ttmn-img-2">
+                <img src="assets/img-pp-ttmn (4).png" />
+              </div>
+              <h3>Lucas Owen</h3>
+              <p>" Batiknya bagus.. cuma saya kecewa dengan pengirimannya yang lama "</p>
+              <p class="bintang"></p>⭐⭐⭐<br>3-5</p>
+            </div>
+          </div>
+          
+          <div class="Card card3">
+            <div class="ttmn-card">
+              <div class="ttmn-img ttmn-img-3">
+                <img src="assets/img-pp-ttmn (2).png" />
+              </div>
+              <h3>Ibrahim Manders</h3>
+              <p>" Pelayanan di toko ini sangat memuaskan. Saya dibantu memilih batik yang sesuai dengan selera dan kebutuhan saya. Proses pengirimannya juga cepat dan barang sampai dalam..</p>
+              <p class="bintang"></p>⭐⭐⭐⭐<br>4-5</p>
+            </div>
+          </div>
+          <div class="Card card4">
+            <div class="ttmn-card">
+              <div class="ttmn-img ttmn-img-4">
+                <img src="assets/img-pp-ttmn (3).png" />
+              </div>
+              <h3>Josep Muhammad</h3>
+              <p>"Bagusss bangetttt🤩🤩 Engga bakal nyesel beli batik di Batiku, Pokoknya the best lahh👍👍 "</p>
+                <p class="bintang">⭐⭐⭐⭐⭐<br>5-5</p>
+            </div>
+          </div>
+        </div>
     </section>
+
+    <!-- Kritik & Saran -->
+     <section id="Kritik-Saran">
+      <h1>Kartu Kritik & Saran Anda</h1>
+      <p>Tulisakan kritik dan saran anda pada kartu dibawah ini</p>
+      <div class="kritik-saran-container">
+        <form id="kritik-saran-form">
+            <div class="form-group">
+                <label for="nama">Nama Anda:</label>
+                <input type="text" id="nama" name="nama" required placeholder="Masukkan nama kamu">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Anda:</label>
+                <input type="email" id="email" name="email" required placeholder="Masukkan email kamu">
+            </div>
+            <div class="form-group">
+                <label for="jenis">Jenis Pesan:</label>
+                <select id="jenis" name="jenis" required>
+                    <option value="">Pilih jenis pesan</option>
+                    <option value="kritik">Kritik</option>
+                    <option value="saran">Saran</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pesan">Pesan Kamu:</label>
+                <textarea id="pesan" name="pesan" rows="5" required placeholder="Tulis pesan kamu disini"></textarea>
+            </div>
+            <button class="btn-kritik" type="submit">Kirim</button>
+        </form>
+    </div>
+     </section>
+
+
+     <!-- AI Button -->
+     <div id="AI-btn" class="btn-AI">
+      <a href="html/AI_batiku.html">AI</a>
+  </div>
 
     <!-- Footer VVVVV -->
     <footer class="footer">
@@ -253,9 +346,9 @@
         </div>
         <div class="footer-section">
           <h3>Ikuti Kami</h3>
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Instagram</a>
+          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://x.com/">Twitter</a>
+          <a href="https://www.instagram.com/">Instagram</a>
         </div>
         <div class="footer-section">
           <h3>Daftar</h3>
@@ -263,10 +356,11 @@
             <input type="text" placeholder="Nama Lengkap" required />
             <input type="email" placeholder="Alamat Email" required />
             <input type="password" placeholder="Kata Sandi" required />
-            <button type="submit">Daftar</button>
+            <button class="btn-daftar" type="submit">Daftar</button>
           </form>
         </div>
       </div>
+
       <div class="footer-bottom">
         <p>&copy; 2024 Batiku. Hak Cipta Dilindungi.</p>
       </div>

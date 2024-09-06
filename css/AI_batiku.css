@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zain:wght@200;300;400;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins";
+  background-color: #ffebda;
+}
+
+header {
+  width: 88.7vw;
+  background-color: #36ba995c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 90px;
+  animation: fadeInDown 2s ease-in;
+}
+
+.nav-back a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-back {
+  padding: 10px 30px;
+  border: 3px solid #000;
+  border-radius: 20px;
+  background-color: #36ba98;
+  box-shadow: 5px 5px 0 #000;
+  transition: all 0.5s;
+  background-image: linear-gradient(60deg, #ffffff00 0%, #ffffff00 40%, #ffffff44 40%, #ffffff44 60%, #ffffff00 60%, #ffffff00 100%);
+  background-size: 200% 100%;
+  background-position-x: 150%;
+  cursor: pointer;
+}
+
+.nav-back:hover {
+  margin-top: 10px;
+  box-shadow: 0 0 0 #000;
+  animation: shimmer 1s forwards;
+}
+
+.logo-batiku-AI img {
+  width: 130px;
+}
+
+/* Arrow Up */
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 23px;
+  outline: none;
+  border: 3px solid #000;
+  background-color: #36ba98;
+  animation: fadeInUp 0.7s ease-in-out;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.scroll-to-top i {
+  padding: 15px 17px;
+}
+
+.scroll-to-top:hover {
+  background-color: #2b8d74;
+  bottom: 30px;
+  box-shadow: 0 0 20px 3px #7dfadb;
+}
+
+.scroll-to-top a {
+  text-decoration: none;
+  color: #000;
+}
+
+.AI-container {
+  width: 100vw;
+  background-size: cover;
+  max-width: 100%;
+  height: 90vh;
+  margin: 60px 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-container {
+  width: 90%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 5px rgba(31, 38, 135, 0.37);
+  overflow: hidden;
+  animation: muncul 2s ease-in;
+  border: 5px solid #8b4513;
+}
+
+.AI-container::after {
+  content: "";
+  position: absolute;
+  left: 20%;
+  top: 16%;
+  object-fit: cover;
+  width: 250px;
+  height: 200px;
+  animation: fadeInRight 2s ease-in;
+  background: url("/assets/SVG/batik-1.svg") no-repeat;
+}
+
+.AI-container::before {
+  content: "";
+  position: absolute;
+  right: 10%;
+  bottom: -30px;
+  size: 200px;
+  object-fit: cover;
+  width: 480px;
+  height: 260px;
+  animation: fadeInUp 2s ease-in;
+  background: url("/assets/SVG/batik-big-2.svg") no-repeat;
+  z-index: -1;
+}
+
+#chatBox {
+  height: 450px;
+  overflow-y: scroll;
+  padding: 25px;
+  background-color: #ffffffe6;
+}
+
+#chatBox p {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #4a0e0e;
+  background-color: #8b45131a;
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 80%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border: 1px solid #8b4513;
+}
+
+#chatBox p:nth-child(odd) {
+  align-self: flex-start;
+  background-color: #1883685c;
+}
+
+#chatBox p:nth-child(even) {
+  align-self: flex-end;
+  background-color: #f4a36175;
+  margin-left: auto;
+}
+
+#chatBox p strong {
+  color: #8b4513;
+  font-weight: bold;
+}
+
+#chatForm {
+  display: flex;
+  padding: 20px;
+  background-color: #e76f5195;
+}
+
+#userInput {
+  flex-grow: 1;
+  padding: 15px;
+  border: 1px solid #8b4513;
+  border-radius: 25px 0 0 25px;
+  font-size: 16px;
+  background-color: #ffffffe6;
+  color: #4a0e0e;
+}
+
+#userInput::placeholder {
+  color: #4a0e0eb3;
+}
+
+.btn-AI {
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #8b4513, #d2691e);
+  color: white;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-AI:hover {
+  background: linear-gradient(45deg, #d2691e, #8b4513);
+  transform: scale(1.05);
+}
+
+.text-powered {
+  margin-top: 30px;
+  font-size: 15px;
+  color: #000;
+  font-weight: 600;
+}
+
+.text-powered img {
+  width: 55px;
+  cursor: pointer;
+}
+
+.text-powered .by {
+  color: #d2691e;
+}
+
+/* footerVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
+.footer {
+  width: 100vw;
+  background-color: #e9c46a;
+  color: #000;
+  padding: 40px 0 20px;
+  font-family: Arial, sans-serif;
+  border-top: 5px solid #000;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section iframe {
+  width: 70;
+  height: 100;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #8e763a;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.signup-form .btn-daftar {
+  background-color: #e76f51;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-form .btn-daftar:hover {
+  background-color: #c35338;
+}
+
+.footer-bottom {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #000000;
+  color: #8e763a;
+}
+
+.footer-bottom p {
+  font-size: 15px;
+}
+
+/* keyframe settings */
+
+@keyframes shimmer {
+  0% {
+    background-position-x: 150%;
+  }
+  100% {
+    background-position-x: -50%;
+  }
+}
+
+@keyframes muncul {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0;
+}
+
+::selection {
+  color: #c35338;
+  background: #36ba998f;
+}
