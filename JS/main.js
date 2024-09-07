@@ -1,3 +1,13 @@
+function showSideBar() {
+  const slideBar = document.querySelector(".sidebar");
+  slideBar.style.display = "flex";
+}
+
+function hideSideBar() {
+  const slideBar = document.querySelector(".sidebar");
+  slideBar.style.display = "none";
+}
+
 window.onscroll = function () {
   scrollFunction();
 };
