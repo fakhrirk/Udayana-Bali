@@ -1521,6 +1521,8 @@ header a {
 /* Responsive settings */
 
 @media screen and (max-width: 800px) {
+  /* Mobile */
+
   /* Navbar */
   .nav-responsive {
     display: none;
@@ -1658,24 +1660,37 @@ header a {
     font-size: 8px;
   }
 
-  .card1 {
-    animation-delay: calc(50s / 4 * (4 - 1) * -1);
-  }
-  .card2 {
-    animation-delay: calc(50s / 4 * (4 - 2) * -1);
-  }
-  .card3 {
-    animation-delay: calc(50s / 4 * (4 - 3) * -1);
-  }
-  .card4 {
-    animation-delay: calc(50s / 4 * (4 - 4) * -1);
+  /* Kritik & Saran */
+
+  #Kritik-Saran h1 {
+    font-size: 3rem;
   }
 
-  .wrapper-testimoni:hover {
-    .Card {
-      transition: all 1s;
-      animation-play-state: paused;
-    }
+  #Kritik-Saran p {
+    font-size: 1rem;
+  }
+
+  .kritik-saran-container {
+    max-width: 70%;
+  }
+
+  .kritik-saran-container::before {
+    width: 150px;
+    height: 150px;
+  }
+
+  .form-group label {
+    font-size: 1.2em;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1em;
+    outline: none;
+  }
+
+  .btn-kritik[type="submit"] {
+    font-size: 1.2em;
   }
 
   /* footer */
@@ -1683,8 +1698,12 @@ header a {
     flex-direction: column;
   }
 
+  .signup-form input {
+    outline: none;
+  }
+
   .footer-section {
-    margin: 20px 20px;
+    margin: 20px 40px;
   }
 }
 
