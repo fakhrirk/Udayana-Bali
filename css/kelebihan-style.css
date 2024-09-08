@@ -1,0 +1,175 @@
+/* VVVV BAGIAN KELEBIHAN VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV */
+
+.kelebihan-section {
+  width: 100%;
+  height: 110vh;
+  background-color: #ffebda;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
+}
+/* text2nya */
+.kelebihan-texts {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.kelebihan-title {
+  width: 60%;
+  font-size: 40px;
+  margin: 20px;
+  animation: fadeInDown 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.kelebihan-desc {
+  width: 40%;
+  font-size: 20px;
+  margin: 10px;
+  font-weight: 300;
+  animation: fadeInDown 1.5s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+/* text2nya */
+
+/* kotak2nya */
+.kelebihan-nya {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-top: 85px;
+  padding: 0px 100px;
+}
+
+.pembuatan-btk {
+  width: 300px;
+  height: 300px;
+  background-color: #36ba98;
+  border: 4px solid black;
+  border-radius: 20px;
+  box-shadow: 20px 20px 0 #000;
+  transition: all 0.5s;
+  cursor: pointer;
+  animation: fadeInRight 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 25%;
+}
+.pembuatan-btk:hover {
+  margin-top: 10px;
+  box-shadow: 0 0 0 #000;
+}
+
+.gambar-pembuatan-btk {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.pembuatan-btk img {
+  width: 70px;
+  height: 70px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.pembuatan-btk h1 {
+  font-size: x-large;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.pembuatan-btk p {
+  font-size: large;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.menjual-btk {
+  width: 300px;
+  height: 300px;
+  background-color: #e76f51;
+  border: 4px solid black;
+  border-radius: 20px;
+  box-shadow: 20px 20px 0 #000;
+  transition: all 0.5s;
+  cursor: pointer;
+  animation: fadeInUp 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 25%;
+}
+.menjual-btk:hover {
+  margin-top: 10px;
+  box-shadow: 0 0 0 #000;
+  animation: shimmer 1s forwards;
+}
+.gambar-menjual-btk {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.menjual-btk img {
+  width: 70px;
+  height: 70px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.menjual-btk h1 {
+  font-size: x-large;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.menjual-btk p {
+  font-size: large;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.bahan-berkualitas {
+  width: 300px;
+  height: 300px;
+  background-color: #f4a261;
+  border: 4px solid black;
+  border-radius: 20px;
+  box-shadow: 20px 20px 0 #000;
+  transition: all 0.5s;
+  cursor: pointer;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 25%;
+}
+.bahan-berkualitas:hover {
+  margin-top: 10px;
+  box-shadow: 0 0 0 #000;
+  animation: shimmer 1s forwards;
+}
+
+.gambar-bahan-berkualitas-btk {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.bahan-berkualitas img {
+  width: 70px;
+  height: 70px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.bahan-berkualitas h1 {
+  font-size: x-large;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.bahan-berkualitas p {
+  font-size: large;
+  padding: 20px 5px 20px 20px;
+}

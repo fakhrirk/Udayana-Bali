@@ -1,0 +1,686 @@
+/* Responsive settings */
+@media screen and (max-width: 900px) {
+  /* Tablet */
+
+  /* Navbar */
+  .nav-responsive {
+    display: none;
+  }
+
+  .nav-kontak {
+    display: none;
+  }
+
+  .bars {
+    cursor: pointer;
+    display: flex;
+  }
+
+  /* Home Content */
+
+  .home-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 1% 0 6% 0;
+    justify-content: center;
+    align-items: start;
+    padding: 0 90px;
+  }
+
+  .text-head-HC {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .text-head-HC h1 {
+    width: 100%;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .no-responsive {
+    display: none;
+  }
+
+  .indonesia {
+    margin-left: 15px;
+  }
+
+  .text-head-HC h1:hover {
+    .indonesia {
+      color: #e76f51;
+      font-size: 60px;
+    }
+  }
+
+  .reponsive-HC {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gambar-head-HC-2 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-head-HC p {
+    font-size: 20px;
+    width: 70%;
+    font-weight: 200;
+    margin: 10px 0;
+  }
+
+  .btn-produk-HC {
+    margin-top: 20px;
+  }
+
+  .BG-HC,
+  .BG-HC-2 {
+    display: none;
+  }
+
+  .gambar-head-HC {
+    display: none;
+  }
+
+  /* kelebihan */
+  .kelebihan-section {
+    height: auto;
+  }
+
+  /* text2nya */
+  .kelebihan-title {
+    width: 70%;
+    font-size: 35px;
+  }
+  .kelebihan-desc {
+    width: 70%;
+    font-size: 15px;
+  }
+  /* text2nya */
+
+  /* kotak2nya */
+  .kelebihan-nya {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pembuatan-btk {
+    width: 600px;
+    height: 250px;
+    margin: 30px 0;
+    box-shadow: none;
+  }
+
+  .menjual-btk {
+    width: 600px;
+    height: 250px;
+    margin: 30px 0;
+    box-shadow: none;
+  }
+
+  .bahan-berkualitas {
+    width: 600px;
+    height: 250px;
+    margin: 30px 0;
+    box-shadow: none;
+  }
+
+  .pembuatan-btk,
+  .menjual-btk,
+  .bahan-berkualitas {
+    margin-left: 2%;
+  }
+
+  .pembuatan-btk:hover,
+  .menjual-btk:hover,
+  .bahan-berkualitas:hover {
+    transform: scale(1.1);
+  }
+
+  /* tentang-kami */
+  .tentang-kami-section {
+    height: auto;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .image-tentang-kami img {
+    display: flex;
+  }
+  .image-tentang-kami-mobile img {
+    display: flex;
+  }
+  .emoji-tentang-kami-1 img {
+    display: none;
+  }
+  .emoji-tentang-kami-2 img {
+    display: none;
+  }
+  .tentang-kami-texts-area {
+    align-items: center;
+  }
+  .title-tentang-kami {
+    margin-top: -10px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  /* VVVVVV awan VVVVVV */
+  .BG-HC-3 {
+    display: none;
+  }
+  .BG-3 {
+    display: none;
+  }
+  .BG-HC-4 {
+    display: none;
+  }
+  .BG-4 {
+    display: none;
+  }
+  /* ^^^^^ awan ^^^^^ */
+
+  .desc-tentang-kami {
+    width: auto;
+    text-align: center;
+  }
+  .desc-tentang-kami span {
+    font-weight: bold;
+  }
+
+  .main-desc-pengalaman {
+    width: auto;
+    font-size: 20px;
+  }
+  .desc-pengalaman {
+    width: auto;
+    font-size: 20px;
+  }
+
+  .main-desc-macam-btk {
+    width: auto;
+    font-size: 20px;
+  }
+  .desc-macam-btk {
+    width: auto;
+    font-size: 20px;
+  }
+
+  .main-desc-terjual {
+    width: auto;
+    font-size: 20px;
+  }
+
+  .desc-terjual {
+    width: auto;
+    font-size: 20px;
+  }
+
+  /* produk-section VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+  .main-texts-produk {
+    height: auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .title-produk {
+    width: 70%;
+    font-size: 40px;
+    margin-left: 0px;
+    animation: fadeInDown 2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+  }
+  .desc-produk {
+    width: 70%;
+    margin-left: 0px;
+    font-size: 20px;
+    animation: fadeInDown 2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+  }
+
+  /* floating emoji cirebon */
+  .emoji-float-cirebon {
+    display: none;
+  }
+  .emoji-float-1-cirebon {
+    display: none;
+  }
+  .cloud-float-cirebon {
+    display: none;
+  }
+  .cloud-floatt-cirebon {
+    display: none;
+  }
+  .cloud-float-1-cirebon {
+    display: none;
+  }
+  .cloud-float-2-cirebon {
+    display: none;
+  }
+  /* floating emoji cirebon */
+
+  .all-model-cirebon {
+    flex-direction: column-reverse;
+  }
+
+  .model-btk-cirebon-1 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+  }
+  .model-btk-cirebon-2 {
+    width: 100%;
+    height: 40%;
+  }
+  .arrow-produk-1 {
+    display: none;
+  }
+  .arrow-produk-1 img {
+    display: none;
+  }
+
+  .category1 {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+
+  .title-cirebon {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .desc-cirebon {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .button-cirebon {
+    margin-left: 0px;
+  }
+
+  .arrow-produk-2 {
+    display: none;
+  }
+  .arrow-produk-2 img {
+    display: none;
+  }
+
+  /* floating emoji yogya */
+  .emoji-float-yogya {
+    display: none;
+  }
+  .emoji-float-1-yogya {
+    display: none;
+  }
+  .cloud-float-yogya {
+    display: none;
+  }
+  .cloud-floatt-yogya {
+    display: none;
+  }
+  .cloud-float-1-yogya {
+    display: none;
+  }
+  .cloud-float-2-yogya {
+    display: none;
+  }
+  /* floating emoji yogya */
+
+  .all-model-yogya {
+    flex-direction: column;
+  }
+  .model-btk-yogya-1 {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .model-btk-yogya-2 {
+    width: 100%;
+    align-items: center;
+    margin-right: 0px;
+  }
+
+  .category2 {
+    margin-top: 50px;
+  }
+
+  .category2:hover {
+    animation: shimmer 1s forwards;
+  }
+
+  .title-yogya {
+    text-align: center;
+  }
+  .desc-yogya {
+    text-align: center;
+  }
+
+  /* Testimoni */
+
+  #Testimoni {
+    width: auto;
+    height: auto;
+  }
+
+  #Testimoni h1 {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .arrow-testimoni img {
+    display: none;
+  }
+
+  .reponsive-arrow img {
+    display: flex;
+    margin-left: 25%;
+    width: 50%;
+  }
+
+  .wrapper-testimoni {
+    margin-top: 1.6rem;
+  }
+
+  .Card {
+    margin-top: 10px;
+  }
+
+  .ttmn-card {
+    width: 250px;
+    height: 300px;
+  }
+
+  .ttmn-img {
+    width: 70px;
+    height: 70px;
+    top: -100px;
+  }
+
+  .ttmn-img-1,
+  .ttmn-img-3 {
+    top: -80px;
+  }
+
+  .ttmn-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .ttmn-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .ttmn-card p {
+    font-size: 8px;
+  }
+
+  /* Kritik & Saran */
+
+  #Kritik-Saran h1 {
+    font-size: 3rem;
+  }
+
+  #Kritik-Saran p {
+    font-size: 1rem;
+  }
+
+  .kritik-saran-container {
+    max-width: 70%;
+  }
+
+  .kritik-saran-container::before {
+    width: 150px;
+    height: 150px;
+  }
+
+  .form-group label {
+    font-size: 1.2em;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1em;
+    outline: none;
+  }
+
+  .btn-kritik[type="submit"] {
+    font-size: 1.2em;
+  }
+
+  /* footer */
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .signup-form input {
+    outline: none;
+  }
+
+  .footer-section {
+    margin: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* Handphone */
+
+  /* Navbar */
+  .nav-responsive {
+    display: none;
+  }
+
+  header {
+    padding: 10px 30px;
+    animation: fadeInDown 2s ease-in;
+  }
+
+  .bars {
+    cursor: pointer;
+    display: flex;
+  }
+
+  /* Home Content */
+
+  .home-content {
+    margin: none;
+    padding: 0 0px;
+  }
+
+  .text-head-HC {
+    margin-top: 80px;
+  }
+
+  .text-head-HC h1 {
+    font-size: 45px;
+  }
+
+  .gambar-head-HC-2 {
+    width: 100%;
+  }
+
+  .no-responsive {
+    display: none;
+  }
+
+  .indonesia {
+    margin-left: 10px;
+  }
+
+  .text-head-HC h1:hover {
+    .indonesia {
+      color: #e76f51;
+      font-size: 47px;
+    }
+  }
+  .btn-produk-HC {
+    margin-top: 50px;
+  }
+
+  .reponsive-HC {
+    margin-bottom: 130px;
+  }
+
+  .btn-produk-HC {
+    margin-top: 90px;
+  }
+
+  /* kelebihan */
+  .kelebihan-section {
+    height: auto;
+  }
+
+  /* text2nya */
+  .kelebihan-title {
+    width: 70%;
+    font-size: 30px;
+  }
+  .kelebihan-desc {
+    width: 70%;
+    font-size: 15px;
+  }
+
+  /* kotak2nya */
+
+  .pembuatan-btk {
+    width: 350px;
+  }
+
+  .menjual-btk {
+    width: 350px;
+  }
+
+  .bahan-berkualitas {
+    width: 350px;
+    height: 400px;
+  }
+
+  .kelebihan-nya {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 250px 0;
+    padding: 0px;
+  }
+
+  .pembuatan-btk:hover,
+  .menjual-btk:hover,
+  .bahan-berkualitas:hover {
+    transform: scale(1.06);
+  }
+
+  /* tentang-kami */
+  .tentang-kami-texts-area {
+    width: auto;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .desc-terjual {
+    width: auto;
+    font-size: 20px;
+  }
+
+  .title-tentang-kami {
+    width: auto;
+    font-size: 25px;
+    text-align: center;
+    margin-top: -10px;
+  }
+
+  .desc-tentang-kami {
+    width: 100vw;
+  }
+
+  /* produk-section VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+  .model-btk-cirebon-1 {
+    width: auto;
+  }
+
+  .image-cirebon img {
+    max-width: 300px;
+  }
+
+  .category1 {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+
+  .title-cirebon {
+    width: auto;
+    font-size: 25px;
+  }
+
+  .desc-cirebon {
+    padding: 0 20px;
+    margin-left: 0px;
+  }
+
+  .button-cirebon:hover {
+    background-color: #f4a261;
+    margin-left: 10px;
+  }
+
+  .image-yogya img {
+    max-width: 300px;
+  }
+
+  .desc-yogya {
+    width: 90%;
+    padding: 0 20px;
+    margin-left: 0px;
+  }
+
+  .title-yogya {
+    width: auto;
+    font-size: 25px;
+  }
+
+  /* Testimoni */
+
+  #Testimoni h1 {
+    font-size: 35px;
+  }
+
+  .Card {
+    margin-top: 40px;
+  }
+
+  .ttmn-card {
+    width: 200px;
+    height: 300px;
+  }
+
+  /* Kritik & Saran */
+
+  #Kritik-Saran h1 {
+    padding: 0 20px;
+    font-size: 3rem;
+  }
+  #Kritik-Saran p {
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+
+  .kritik-saran-container {
+    max-width: 90%;
+  }
+}

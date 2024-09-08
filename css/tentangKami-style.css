@@ -1,0 +1,161 @@
+/* tentang-kami-section VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+.tentang-kami-section {
+  width: auto;
+  height: 110vh;
+  background-color: #e9c46a;
+  border-top: 7px solid black;
+  border-bottom: 7px solid black;
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  flex-direction: row;
+}
+.tentang-kami-img-area {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.image-tentang-kami img {
+  max-width: 450px;
+  border: rgba(255, 0, 0, 0) 3px solid;
+  animation: fadeInRight 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.image-tentang-kami-mobile img {
+  width: 450px;
+  border: rgba(255, 0, 0, 0) 3px solid;
+  animation: fadeInDown 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  display: none;
+}
+.emoji-tentang-kami-1 img {
+  width: 150px;
+  position: absolute;
+  margin-top: -300px;
+  margin-left: 7%;
+  z-index: 10;
+  animation: fadeInDown 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 60%;
+}
+.emoji-tentang-kami-2 img {
+  width: 150px;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 30%;
+  animation: fadeInRight 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.tentang-kami-texts-area {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+.title-tentang-kami {
+  width: 700px;
+  font-size: 55px;
+  text-align: left;
+  margin-top: 70px;
+  animation: fadeInDown 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+/* VVVVVV awan VVVVVV */
+.BG-HC-3 {
+  animation: muncul 3s ease-in;
+}
+.BG-3 {
+  width: 10%;
+  position: absolute;
+  margin-left: 80%;
+  margin-top: 10%;
+  animation: BolakBalik2 25s ease-in-out infinite alternate;
+  z-index: 0;
+}
+.BG-HC-4 {
+  width: 70%;
+  animation: muncul 3s ease-in;
+  z-index: 10;
+}
+.BG-4 {
+  width: 15%;
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 15%;
+  animation: BolakBalik3 25s ease-in-out infinite alternate;
+  z-index: 10;
+}
+/* ^^^^^ awan ^^^^^ */
+
+.desc-tentang-kami {
+  width: 450px;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 30px;
+}
+.desc-tentang-kami span {
+  font-weight: bold;
+}
+
+.main-desc-pengalaman {
+  width: 600px;
+  font-size: 35px;
+  font-weight: 700;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.desc-pengalaman {
+  width: 500px;
+  font-size: 30px;
+  margin-left: 30px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.main-desc-macam-btk {
+  width: 700px;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 30px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.desc-macam-btk {
+  width: 550px;
+  font-size: 30px;
+  margin-left: 30px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.main-desc-terjual {
+  width: 700px;
+  font-size: 33px;
+  font-weight: 700;
+  margin-top: 30px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.desc-terjual {
+  width: 600px;
+  font-size: 30px;
+  margin-left: 30px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}

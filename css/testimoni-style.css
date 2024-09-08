@@ -1,0 +1,125 @@
+/* Testimoni VVVVVVVV */
+#Testimoni {
+  width: auto;
+  height: 100vh;
+  margin-bottom: 15%;
+  background-color: #36ba98;
+  border-top: 7px solid black;
+  align-items: center;
+  border-bottom: 7px solid black;
+}
+
+#Testimoni h1 {
+  font-size: 70px;
+  text-align: left;
+  padding: 0 100px;
+  margin-top: 50px;
+  animation: fadeInRight linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.arrow-testimoni img {
+  width: 25%;
+}
+
+.reponsive-arrow img {
+  display: none;
+}
+
+.wrapper-testimoni {
+  max-width: 1536px;
+  position: relative;
+  text-align: center;
+  height: 430px;
+  margin-inline: auto;
+  position: relative;
+  margin-top: 3.6rem;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));
+  animation: fadeInLeft linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.Card {
+  margin-top: 55px;
+  border-radius: 6px;
+  position: relative;
+  left: 100%;
+  animation: scrollLeft 50s linear infinite;
+  transition: all 1s;
+}
+
+.ttmn-card {
+  background: #e76f51;
+  padding: 20px;
+  width: 400px;
+  height: 350px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #ffc7995f;
+  position: absolute;
+  transition: all 0.7s;
+  border: #e9c46a 5px solid;
+}
+
+.ttmn-img {
+  width: 120px;
+  height: 120px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto -70px;
+  position: relative;
+  top: -120px;
+  border: #e9c46a 5px solid;
+  overflow: hidden;
+}
+
+.ttmn-img-1,
+.ttmn-img-3 {
+  top: -100px;
+}
+
+.ttmn-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ttmn-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.ttmn-card p {
+  font-size: 14px;
+  margin: 10px 10px;
+}
+.ttmn-card h4 {
+  font-size: 1em;
+  color: #008cba;
+  font-weight: normal;
+}
+
+.card1 {
+  animation-delay: calc(50s / 4 * (4 - 1) * -1);
+}
+.card2 {
+  animation-delay: calc(50s / 4 * (4 - 2) * -1);
+}
+.card3 {
+  animation-delay: calc(50s / 4 * (4 - 3) * -1);
+}
+.card4 {
+  animation-delay: calc(50s / 4 * (4 - 4) * -1);
+}
+
+.wrapper-testimoni:hover {
+  .Card {
+    transition: all 1s;
+    animation-play-state: paused;
+  }
+}

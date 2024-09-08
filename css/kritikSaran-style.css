@@ -1,0 +1,107 @@
+/* Kritik dan Saran vvvvvvvvvvvvvv */
+
+#Kritik-Saran {
+  margin-bottom: 15%;
+}
+
+#Kritik-Saran h1 {
+  text-align: center;
+  font-size: 4rem;
+  animation: fadeInDown 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+#Kritik-Saran p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 7%;
+  animation: fadeInDown 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+.kritik-saran-container {
+  max-width: 50%;
+  margin: 20px auto;
+  padding: 50px 20px;
+  background-color: #36ba98;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  font-family: "poppins";
+  border: 8px solid #ff9800;
+  position: relative;
+  overflow: hidden;
+  animation: cardScroll 2.5s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+.kritik-saran-container::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -70px;
+  width: 200px;
+  height: 200px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 10C30 10 10 30 10 50s20 40 40 40 40-20 40-40S70 10 50 10zm0 70c-16.6 0-30-13.4-30-30s13.4-30 30-30 30 13.4 30 30-13.4 30-30 30z" fill="%23FF9800"/></svg>')
+    no-repeat;
+  opacity: 0.8;
+}
+.kritik-saran-container::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 100px;
+  height: 100px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M90 50c0 22.1-17.9 40-40 40S10 72.1 10 50s17.9-40 40-40 40 17.9 40 40zm-70 0c0 16.6 13.4 30 30 30s30-13.4 30-30-13.4-30-30-30-30 13.4-30 30z" fill="%23FF9800"/></svg>')
+    no-repeat;
+  opacity: 0.8;
+}
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff8e1;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 4px solid #e76f51;
+  border-radius: 15px;
+  outline: none;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  background-color: #fff8e1;
+  font-family: "Poppins";
+}
+.form-group textarea {
+  resize: vertical;
+}
+.btn-kritik[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Poppins";
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 5px 0 #e64a19;
+}
+.btn-kritik[type="submit"]:hover {
+  background-color: #e64a19;
+  transform: translateY(2px);
+  box-shadow: 0 3px 0 #d84315;
+}

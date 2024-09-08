@@ -1,0 +1,405 @@
+/* produk-section VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+.produk-section {
+  width: 100%;
+  height: auto;
+  background-color: #ffebda;
+  display: flex;
+  flex-direction: column;
+}
+.produk-section-2 {
+  width: 100%;
+  height: auto;
+  background-color: #ffebda;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-texts-produk {
+  width: 100%;
+  height: 40%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 160px;
+}
+.title-produk {
+  width: 50%;
+  font-size: 50px;
+  margin-left: 100px;
+  animation: fadeInRight 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.desc-produk {
+  width: 50%;
+  font-size: 25px;
+  font-weight: 300;
+  word-spacing: 0px;
+  margin-left: 100px;
+  margin-top: 30px;
+  animation: fadeInRight 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.arrow-produk-1 {
+  width: 1px;
+  height: 1px;
+  animation: muncul 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 70%;
+}
+.arrow-produk-1 img {
+  max-width: 290px;
+  position: absolute;
+  margin-left: 880px;
+  margin-top: 50px;
+  rotate: -10deg;
+  animation: muncul 3s;
+}
+
+/* floating emoji cirebon */
+.emoji-float-cirebon {
+  animation: muncul 3s ease-in;
+  z-index: 10;
+}
+.emoji-float-1-cirebon {
+  width: 13%;
+  position: absolute;
+  margin-left: 56%;
+  margin-top: 4%;
+  animation: jiggle 2.5s ease-in-out infinite alternate;
+  z-index: 10;
+}
+.cloud-float-cirebon {
+  width: 70%;
+  animation: muncul 3s ease-in;
+  z-index: 10;
+}
+.cloud-floatt-cirebon {
+  width: 70%;
+  animation: muncul 3s ease-in;
+  z-index: 10;
+}
+.cloud-float-1-cirebon {
+  width: 15%;
+  position: absolute;
+  margin-left: 57%;
+  margin-top: 30%;
+  animation: hoverAround 1s ease-in-out infinite alternate;
+  z-index: 10;
+}
+.cloud-float-2-cirebon {
+  width: 25%;
+  position: absolute;
+  margin-left: 73%;
+  margin-top: 35%;
+  animation: hoverAround 3s ease-in-out infinite alternate;
+  z-index: 10;
+}
+/* floating emoji cirebon */
+
+.all-model-cirebon {
+  display: flex;
+  flex-direction: row;
+}
+.model-btk-cirebon-1 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.model-btk-cirebon-2 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category1 {
+  width: 100px;
+  font-size: 10px;
+  background-color: #e76f51;
+  border-radius: 30px;
+  border: 3px solid #000;
+  padding: 3px;
+  text-align: center;
+  background-image: linear-gradient(-60deg, #ffffff00 0%, #ffffff00 40%, #ffffff44 40%, #ffffff44 60%, #ffffff00 60%, #ffffff00 100%);
+  background-size: 200% 100%;
+  background-position-x: 150%;
+  margin-left: 180px;
+  margin-top: 160px;
+  animation: fadeInRight 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.category1:hover {
+  animation: shimmer 1s forwards;
+}
+
+.title-cirebon {
+  width: 600px;
+  font-size: 40px;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 180px;
+  animation: fadeInRight 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.title-cirebon h1 {
+  transition: all 1s;
+}
+.title-cirebon h1:hover {
+  color: #e76f51;
+  margin-left: 5px;
+}
+.desc-cirebon {
+  width: 450px;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 180px;
+  animation: fadeInRight 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.button-cirebon {
+  position: relative;
+  width: 220px;
+  font-size: 20px;
+  background-color: #e76f5100;
+  border-radius: 30px;
+  border: 3px solid #000;
+  padding: 5px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 180px;
+  transition: all 0.7s;
+  animation: fadeInRight 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.button-cirebon:hover {
+  background-color: #f4a261;
+  margin-left: 190px;
+}
+.button-cirebon a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  z-index: 1;
+}
+
+.arrow-produk-2 {
+  width: 100px;
+  height: 130px;
+}
+.arrow-produk-2 img {
+  max-width: 315px;
+  position: absolute;
+  margin-left: 530px;
+  animation: muncul 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 70%;
+}
+
+.image-cirebon {
+  margin-top: 100px;
+}
+.image-cirebon img {
+  max-width: 450px;
+  border: 3px solid black;
+  border-radius: 13px;
+  transition: all 0.5s;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+/* floating emoji yogya */
+.emoji-float-yogya {
+  animation: muncul 3s ease-in;
+  z-index: 10;
+}
+.emoji-float-1-yogya {
+  width: 13%;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 4%;
+  animation: jiggle1 2.5s ease-in-out infinite alternate;
+  z-index: 10;
+}
+.cloud-float-yogya {
+  width: 70%;
+  animation: muncul 3s ease-in;
+  z-index: 10;
+}
+.cloud-floatt-yogya {
+  width: 70%;
+  animation: muncul 3s ease-in;
+  z-index: 10;
+}
+.cloud-float-1-yogya {
+  width: 15%;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 35%;
+  animation: hoverAround 1s ease-in-out infinite alternate;
+  z-index: 10;
+}
+.cloud-float-2-yogya {
+  width: 25%;
+  position: absolute;
+  margin-top: 30%;
+  animation: hoverAround 2s ease-in-out infinite alternate;
+  z-index: 10;
+}
+/* floating emoji yogya */
+
+.all-model-yogya {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.model-btk-yogya-1 {
+  width: 50%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 160px;
+}
+.model-btk-yogya-2 {
+  width: 50%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-right: 160px;
+}
+
+.category2 {
+  width: 120px;
+  font-size: 10px;
+  background-color: #f4a261;
+  border-radius: 30px;
+  border: 3px solid #000;
+  padding: 3px;
+  text-align: center;
+  transition: all 0.7s;
+  background-image: linear-gradient(60deg, #ffffff00 0%, #ffffff00 40%, #ffffff44 40%, #ffffff44 60%, #ffffff00 60%, #ffffff00 100%);
+  background-size: 200% 100%;
+  background-position-x: 150%;
+  margin-top: 80px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.category2:hover {
+  animation: shimmer 1s forwards;
+}
+
+.title-yogya {
+  width: 300px;
+  font-size: 40px;
+  text-align: right;
+  margin-top: 30px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.title-yogya h1 {
+  transition: all 1s;
+}
+.title-yogya h1:hover {
+  color: #f4a261;
+  margin-right: 5px;
+}
+.desc-yogya {
+  width: 450px;
+  font-size: 20px;
+  text-align: right;
+  margin-top: 30px;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.button-yogya {
+  width: 150px;
+  font-size: 17px;
+  background-color: #36ba9900;
+  border-radius: 30px;
+  border: 3px solid #000;
+  padding: 10px;
+  text-align: center;
+  margin-top: 50px;
+  transition: all 0.7s;
+  animation: fadeInLeft 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+.button-yogya:hover {
+  background-color: #f4a261;
+  margin-right: 10px;
+}
+.button-yogya a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+.spacer-yogya {
+  height: 170px;
+  width: 100px;
+}
+
+.image-yogya {
+  margin-top: 1px;
+}
+.image-yogya img {
+  max-width: 450px;
+  border: 3px solid black;
+  border-radius: 13px;
+  transition: all 0.5s;
+  animation: fadeInRight 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.button-produk-lainnya-area {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 160px;
+  animation: fadeInDown 2s ease-in;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.button-produk-lainnya-area a {
+  width: 200px;
+  font-size: 20px;
+  background-color: #36ba98;
+  border-radius: 30px;
+  border: 3px solid #000;
+  padding: 13px;
+  text-align: center;
+  margin-top: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  transition: all 0.5s;
+}
+.button-produk-lainnya-area a:hover {
+  background-color: #f4a261;
+  box-shadow: 0 0 20px #2612025d;
+}
