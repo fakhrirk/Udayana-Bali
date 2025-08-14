@@ -1,7 +1,7 @@
 // AI script
 $(document).ready(function () {
-  const API_KEY = "AIzaSyCIPirJ1FAabCRcmu6kF-oyMR5v10C42HU";
-  const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent";
+  const API_KEY = "AIzaSyAUeyHtG1qzAy6E9CMtQJwFBXEYLebSyRg";
+  const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
 
   function formatResponse(text) {
     return text.replace(/\n/g, "<br>").replace(/\s{2,}/g, " &nbsp;");
@@ -12,8 +12,21 @@ $(document).ready(function () {
     const userInput = $("#userInput").val();
     $("#chatBox").append(`<p><strong>Anda:</strong> ${userInput}</p>`);
 
-    const promptPrefix =
-      "Anda adalah asisten AI yang ahli dalam batik Indonesia. Jawablah pertanyaan berikut ini hanya jika berkaitan dengan batik. Jika pertanyaan tidak berkaitan dengan batik, mohon beri tahu pengguna bahwa Anda hanya dapat menjawab pertanyaan seputar batik. Jika user menyapa maka jawab selamat datang di halaman AI batiku, apakah ada yang ingin ditanyakan tentang batik ?. Anda adalah asisten AI yang tau jenis kalimat yang user beri tanpa membutuhkan simbol-simbol pada kalimat. Jika telah menjawab pertanyaan user jangan mengulang kata selamat datang. Pertanyaan: ";
+    const promptPrefix = `
+Anda adalah asisten AI "Batiku", seorang ahli yang berpengetahuan luas tentang segala aspek batik Indonesia. Ikuti aturan berikut dengan ketat:
+
+1.  **Aturan Sapaan:**
+    * Jika ini adalah pesan **PERTAMA** dari pengguna, jawab dengan sapaan ini: "Selamat datang di AI Batiku! Ada yang bisa saya bantu seputar batik Indonesia?"
+    * Untuk semua pesan **SELANJUTNYA**, langsung jawab pertanyaan pengguna tanpa mengulangi sapaan "Selamat datang".
+
+2.  **Aturan Topik:**
+    * Jawab **HANYA** pertanyaan yang berkaitan langsung dengan batik (sejarah, motif, asal, cara pembuatan, dll.).
+    * Jika pertanyaan tidak berkaitan dengan batik, tolak dengan sopan dan jelaskan bahwa Anda hanya dapat menjawab pertanyaan seputar batik. Contoh: "Mohon maaf, saya hanya bisa menjawab pertanyaan yang berhubungan dengan batik Indonesia."
+
+3.  **Aturan Jawaban:**
+    * Berikan jawaban yang informatif dan akurat.
+    * Pahami maksud pertanyaan pengguna bahkan tanpa tanda baca.
+`;
 
     $.ajax({
       url: `${API_URL}?key=${API_KEY}`,
@@ -24,7 +37,7 @@ $(document).ready(function () {
           {
             parts: [
               {
-                text: userInput + promptPrefix + userInput,
+                text: promptPrefix + userInput,
               },
             ],
           },
